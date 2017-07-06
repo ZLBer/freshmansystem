@@ -1,0 +1,9 @@
+body{background:#333;}
+.content{background:rgba(255,255,255,0.9);padding:40px;width:1040px;margin:40px auto 100px auto;border:5px solid #4E9922;}
+.content table{margin:0 auto;}
+.content table tr{height:60px;}
+.content table tr td{padding-left:5px ;text-align:right;}
+.content input[type="text"],input[type="number"],input[type="password"],select{border:1px solid #4E9922;outline:none;padding:8px 10px;width:220px;}
+.content input[type="text"]:focus{background:#fff;}
+.content input[type="button"],input[type="submit"]{background:#4E9922;transition:background 0.3s ease;color:#fff;padding:8px 30px;float:right;} 
+.content input[type="button"]:hover,input[type="submit"]:hover{background:#2c630b;cursor:pointer;}

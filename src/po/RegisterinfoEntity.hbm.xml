@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="po.RegisterinfoEntity" table="registerinfo" schema="baodao">
+        <id name="sno" column="sno"/>
+        <property name="college" column="college"/>
+        <property name="spotRegister" column="spotRegister"/>
+        <property name="netRegister" column="netRegister"/>
+        <property name="reservation" column="reservation"/>
+        <property name="rTime" column="r_time"/>
+        <property name="reason" column="reason"/>
+        <property name="registerTime" column="registerTime"/>
+    </class>
+</hibernate-mapping>

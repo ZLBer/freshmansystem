@@ -1,0 +1,139 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+input {
+	border: none;
+	outline: none;
+	font-family: "微软雅黑";
+	font-weight: 100;
+}
+
+img {
+	outline: none;
+	border: none;
+}
+
+body {
+	width: 100%;
+	min-width: 1200px;
+	font-family: "微软雅黑";
+}
+
+/*公共底部样式*/
+.footer {
+	width: 1280px;
+	background: #ccd5e6;
+	box-sizing: border-box;
+	padding: 5px 0px;
+	margin: 0 auto;
+	margin-top: 1px;
+	border-bottom: dotted 1px;
+}
+
+.footerinner {
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.share {
+	width: 274px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.share li {
+	float: left;
+	height: 50px;
+	padding: 5px 14px;
+}
+
+.share li img {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	border-radius: 20px;
+}
+
+.code_wrap {
+	position: absolute;
+	left: 50%;
+	top: -235px;
+	margin-left: -450px;
+	width: 900px;
+	z-index: 50;
+}
+
+.code {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.code li {
+	float: left;
+	width: 200px;
+	height: 240px;
+}
+
+.code li img {
+	width: 210px;
+	height: 240px;
+	display: none;
+}
+
+.code li img.weibo {
+	position: absolute;
+	left: 244px;
+}
+
+.code li img.qq {
+	position: absolute;
+	left: 312px;
+}
+
+.code li img.twitter {
+	position: absolute;
+	left: 382px;
+}
+
+.code li img.wechat {
+	position: absolute;
+	left: 448px;
+}
+
+.footerinfo {
+	background-color: #ccd5e6;
+	font-size: 16px;
+	text-align: center;
+	font-family: "����"; color : rgba( 27, 24, 24, 0.97);
+	filter: alpha(opacity =                             80);
+	font-size: 16px;
+	color: rgba(27, 24, 24, 0.97);
+}
+
+.footerinfoTop {
+	padding-bottom: 2px;
+}
+
+.footerinfoTop p {
+	line-height: 22px;
+}
+
+.footerinfoBottom {
+	font-size: 12px;
+}
+
+.footerinfoBottom .min {
+	font-size: 12px;
+}

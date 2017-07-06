@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="po.RegisterdateEntity" table="registerdate" schema="baodao">
+        <id name="id" column="Id"/>
+        <property name="rDate" column="r_date"/>
+        <property name="rEnabled" column="r_enabled"/>
+        <property name="rCampus" column="r_campus"/>
+    </class>
+</hibernate-mapping>

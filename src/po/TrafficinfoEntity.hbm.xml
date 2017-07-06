@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="po.TrafficinfoEntity" table="trafficinfo" schema="baodao">
+        <id name="sno" column="sno"/>
+        <property name="trafficWay" column="trafficWay"/>
+        <property name="company" column="company"/>
+        <property name="registerTime" column="registerTime"/>
+        <property name="campus" column="campus"/>
+        <property name="tTime" column="t_time"/>
+    </class>
+</hibernate-mapping>

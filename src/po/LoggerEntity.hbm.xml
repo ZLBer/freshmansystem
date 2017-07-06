@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="po.LoggerEntity" table="logger" schema="baodao">
+        <id name="id" column="Id"/>
+        <property name="uIp" column="u_ip"/>
+        <property name="uName" column="u_name"/>
+        <property name="uOperate" column="u_operate"/>
+        <property name="uTime" column="u_time"/>
+        <property name="uParams" column="u_params"/>
+    </class>
+</hibernate-mapping>

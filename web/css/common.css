@@ -1,0 +1,248 @@
+/*清零样式 start*/
+* {
+	word-wrap: break-word;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	-webkit-text-size-adjust: none;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,i
+	{
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font: normal 14px/24px "Microsoft Yahei", "冬青黑体简体中文 w3", "宋体";
+}
+
+fieldset,img,html,body,iframe {
+	border: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ol,ul,li {
+	list-style: none;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-weight: normal;
+	font-style: normal;
+}
+
+caption,th {
+	text-align: left;
+}
+
+em,i,small,caption,th {
+	font-weight: normal;
+	font-style: normal;
+	font-size: 100%;
+}
+
+h1,h2,h3,h4,h5,h6,em,strong,b {
+	font-weight: bold;
+	font-size: 100%;
+}
+
+q:before,q:after {
+	content: '';
+}
+
+.clearfix {
+	*zoom: 1
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a,img {
+	border: none;
+}
+
+a,button {
+	outline: none;
+	border: 0;
+}
+
+input,select {
+	border: 1px solid #ccc;
+}
+
+button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
+textarea,input,button,select {
+	outline: 0;
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+	font-family: inherit;
+}
+
+textarea {
+	overflow: auto;
+	resize: none;
+}
+
+.hide,.none {
+	display: none
+}
+
+.show,.block {
+	display: block;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.w250 {
+	width: 250px;
+}
+
+.w360 {
+	width: 360px;
+}
+
+.clear {
+	clear: both;
+}
+/*清零样式 end*/
+/*header*/
+.header {
+	background: #333;
+	background: linear-gradient(#333, #666);
+	height: 80px;
+	min-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
+}
+.header .h_all {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.header .h_all .h_logo {
+	width: 504px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.header .h_all .h_motto {
+	height: 60px;
+	margin-top: 10px;
+	margin-right: 10px;
+	float: right;
+}
+
+.header .h_all .h_pic {
+	height: 60px;
+}
+/* .header .h_all .h_title{color:#fff;font-size:26px;line-height:50px;padding-left:20px;text-shadow:1px 1px 1px #ccc;} */
+.header .h_all .h_menu {
+	float: left;
+	margin-left: 11px;
+	margin-top: 15px;
+}
+
+.header .h_all .h_menu li {
+	float: left;
+}
+
+.header .h_all .h_menu li a {
+	text-decoration: none;
+	color: #fff;
+	height: 50px;
+	padding: 0 15px;
+	display: block;
+	float: left;
+	line-height: 50px;
+	font-size: 16px;
+}
+
+.header .h_all .h_menu li a:hover {
+	color: lightgreen;
+}
+
+.header .h_all .h_logout {
+	float: right;
+	margin-right: 40px;
+	line-height: 50px;
+	height: 50px;
+	margin-top: 15px;
+}
+
+.header .h_all .h_logout a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.sel {
+	background: #4E7922;
+	background: radial-gradient(#4B971E, #4E7922);
+}
+
+/*footer*/
+.footer {
+	background: gray;
+	height: 60px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.footer .f_all {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+.footer .f_all  .f_info {
+	font-size: 14px;
+	color: #ccc;
+	text-align: center;
+}
+
+.not-null:after {
+	content: "*";
+	color: red;
+	padding-left: 2px;
+}

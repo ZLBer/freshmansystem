@@ -1,0 +1,35 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.provider_class">org.hibernate.connection.ProxoolConnectionProvider</property>
+        <property name="hibernate.proxool.pool_alias">guestbook</property>
+        <property name="hibernate.proxool.xml">WEB-INF/proxool.xml</property>
+        <property name="hibernate.proxool.existing_pool">true</property>
+        <!-- SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- Echo all executed SQL to stdout -->
+        <property name="show_sql">true</property>
+        <mapping resource="po/AdminEntity.hbm.xml"/>
+        <mapping resource="po/BasicinfoEntity.hbm.xml"/>
+        <mapping resource="po/LoggerEntity.hbm.xml"/>
+        <mapping resource="po/NewsEntity.hbm.xml"/>
+        <mapping resource="po/RegistercountEntity.hbm.xml"/>
+        <mapping resource="po/RegisterdateEntity.hbm.xml"/>
+        <mapping resource="po/RegisterinfoEntity.hbm.xml"/>
+        <mapping resource="po/StcompleteinfoEntity.hbm.xml"/>
+        <mapping resource="po/SysCampusEntity.hbm.xml"/>
+        <mapping resource="po/SysSetEntity.hbm.xml"/>
+        <mapping resource="po/SysTrafficEntity.hbm.xml"/>
+        <mapping resource="po/SysUserEntity.hbm.xml"/>
+        <mapping resource="po/TrafficinfoEntity.hbm.xml"/>
+        <mapping resource="po/UAccessEntity.hbm.xml"/>
+        <mapping resource="po/UserEntity.hbm.xml"/>
+        <mapping resource="po/CollegeEntity.hbm.xml"/>
+        <mapping resource="po/MajorEntity.hbm.xml"/>
+        <mapping resource="po/ScoreEntity.hbm.xml"/>
+        <mapping resource="po/ProblemEntity.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

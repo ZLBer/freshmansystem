@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="po.BasicinfoEntity" table="basicinfo" schema="baodao">
+        <id name="sno" column="sno"/>
+        <property name="name" column="name"/>
+        <property name="sex" column="sex"/>
+        <property name="examNum" column="examNum"/>
+        <property name="idNum" column="IDNum"/>
+        <property name="campus" column="campus"/>
+        <property name="college" column="college"/>
+        <property name="major" column="major"/>
+        <property name="classNum" column="classNum"/>
+        <property name="dormNum" column="dormNum"/>
+        <property name="bankCardId" column="bankCardID"/>
+        <property name="paySta" column="paySta"/>
+        <property name="collegeTel" column="collegeTel"/>
+        <property name="schoolTel" column="schoolTel"/>
+        <property name="masterName" column="masterName"/>
+        <property name="masterTel" column="masterTel"/>
+        <property name="brother" column="brother"/>
+        <property name="brothertel" column="brothertel"/>
+        <property name="helper" column="helper"/>
+        <property name="helpertel" column="helpertel"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="po.SysSetEntity" table="sys_set" schema="baodao">
+        <id name="id" column="Id"/>
+        <property name="sMtitle" column="s_mtitle"/>
+        <property name="sUtitle" column="s_utitle"/>
+        <property name="sNhref" column="s_nhref"/>
+        <property name="sNblank" column="s_nblank"/>
+        <property name="sMhref" column="s_mhref"/>
+        <property name="sMblank" column="s_mblank"/>
+        <property name="sFooter" column="s_footer"/>
+    </class>
+</hibernate-mapping>

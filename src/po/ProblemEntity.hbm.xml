@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="po.ProblemEntity" table="problem" schema="baodao">
+        <id name="problemid" column="problemid"/>
+        <property name="problemtext" column="problemtext"/>
+        <property name="answer" column="answer"/>
+        <property name="price" column="price"/>
+        <property name="a" column="A"/>
+        <property name="b" column="B"/>
+        <property name="c" column="C"/>
+        <property name="d" column="D"/>
+    </class>
+</hibernate-mapping>
