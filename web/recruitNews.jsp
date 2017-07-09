@@ -71,7 +71,7 @@
         <div class="text" style="font-size: 14px;width:530px;height:300px;background-color:rgba(227,241,202,0.52);;position: absolute; bottom: 0;left: 150px;border-radius:8px">
             <div  id="title" style="color:#000000;text-align: center;font-size:25px;opacity: 1"></div>
             <div  id="time" style="color:#000000;text-align: center;opacity: 1"></div>
-            <div  id="content" style="width:500px;color:#000000;opacity: 1"></div>
+            <div  id="content" style="width:530px;color:#000000;opacity: 1"></div>
         </div>
         <div class="dlk">
 

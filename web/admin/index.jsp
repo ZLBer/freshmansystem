@@ -64,6 +64,7 @@
                 <p><a class="easyui-linkbutton" onclick="addTab('上传Excel文档至数据库','${pageContext.request.contextPath }/admin/uploadExcel.jsp')"  target="right">上传Excel文档至数据库</a></p>
                 <p><a class="easyui-linkbutton" onclick="addTab('下载学生信息Excel表','${pageContext.request.contextPath }/admin/downloadStuInfoExcel.jsp')"  target="right">下载学生信息Excel表</a></p>
                 <p><a class="easyui-linkbutton" onclick="addTab('补充学生信息','${pageContext.request.contextPath }/admin/uploadSuppleExcel.jsp')"  target="right">补充学生信息</a></p>
+                <p><a class="easyui-linkbutton" onclick="addTab('更新学生缴费情况','${pageContext.request.contextPath }/admin/uploadPayStateExcel.jsp')"  target="right">更新学生缴费情况</a></p>
                 <p><a class="easyui-linkbutton" onclick="addTab('发布录取通知','${pageContext.request.contextPath }/admin/searchNews')"  target="right">发布录取通知</a></p>
             </div>
         </div>

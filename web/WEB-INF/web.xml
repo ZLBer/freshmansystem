@@ -243,7 +243,10 @@
     <servlet>
         <servlet-name>Admin_changeReason</servlet-name>
         <servlet-class>servlet.admin.Admin_changeReason</servlet-class>
-    </servlet>
+    </servlet><servlet>
+    <servlet-name>UploadPayStateExcelServlet</servlet-name>
+    <servlet-class>servlet.admin.UploadPayStateExcelServlet</servlet-class>
+</servlet>
 
 
 
@@ -251,6 +254,14 @@
 
 
 
+
+
+
+
+    <servlet-mapping>
+        <servlet-name>UploadPayStateExcelServlet</servlet-name>
+        <url-pattern>/admin/uploadPayStateExcelServlet</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>QueryProblem</servlet-name>
         <url-pattern>/student/queryProblem</url-pattern>
