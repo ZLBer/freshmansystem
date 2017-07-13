@@ -6,7 +6,7 @@
     <meta name="renderer" content="webkit|ie-comp|ie-stand" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>山东农业大学新生网上报到系统</title>
-    <link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="${pageContext.request.contextPath}/css/style_1.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.11.3.js"></script>
     <script>
         $(document).ready(function(){
@@ -68,7 +68,7 @@
 </div>
 <div class="main">
     <div class="denglu" >
-        <div class="text" style="font-size: 14px;width:530px;height:300px;background-color:rgba(227,241,202,0.52);;position: absolute; bottom: 0;left: 150px;border-radius:8px">
+        <div class="text" style="font-size: 14px;width:530px;height:300px;background-color:rgba(255,255,255,0.52);;position: absolute; bottom: 0;left: 150px;border-radius:8px">
             <div  id="title" style="color:#000000;text-align: center;font-size:25px;opacity: 1"></div>
             <div  id="time" style="color:#000000;text-align: center;opacity: 1"></div>
             <div  id="content" style="width:530px;color:#000000;opacity: 1"></div>
@@ -108,14 +108,14 @@
 
             </table>
 
-            <table id="tb" width="292" border="0" align="center" cellpadding="0"
+            <table id="tb" width="500" border="0" align="center" cellpadding="0"
                    style="margin-left: 30px;text-align: left;" cellspacing="0">
                 <tr>
                     <td height="76" colspan="3"></td>
                 </tr>
                 <tr>
                     <td style="color: black;">提示</td>
-                    <td width="120"><div  style="color: black;" id="message"></div>
+                    <td width="320"><div  style="color: black;" id="message"></div>
                     </td>
                     <td width="127">
                     </td>

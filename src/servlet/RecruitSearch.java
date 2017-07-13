@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by libin on 2017/7/5.
@@ -31,7 +33,18 @@ public class RecruitSearch extends HttpServlet {
             } else {
                 BasicinfoEntity n = s.get(0);
                 message = "查询成功";
-                json = "{\"msg\":\"" + message + "\",\"name\":\"" + n.getName() + "\",\"examid\":\"" + n.getExamNum() + "\",\"sno\":\"" + n.getSno() + "\",\"college\":\"" + n.getCollege() + "\",\"major\":\"" + n.getMajor() + "\"}";
+                String college =n.getCollege();
+                String major=n.getMajor();
+                Pattern CRLF = Pattern.compile("(\r\n|\r|\n|\n\r)");
+                Matcher m = CRLF.matcher(n.getCollege());
+                if (m.find()) {
+                  college = m.replaceAll(" ");
+                }
+                m = CRLF.matcher(major);
+                if (m.find()) {
+                    major = m.replaceAll(" ");
+                }
+                json = "{\"msg\":\"" + message + "\",\"name\":\"" + n.getName() + "\",\"examid\":\"" + n.getExamNum() + "\",\"sno\":\"" + n.getSno() + "\",\"college\":\"" + college + "\",\"major\":\"" + major + "\"}";
             }
 
             PrintWriter out = response.getWriter();
