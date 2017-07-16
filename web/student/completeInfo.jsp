@@ -127,7 +127,7 @@
                         <label for="other">其他</label><input id="other" type="radio" name="trafficWay" value="其他">
                     </td>
                 </tr>
-
+          
             </table>
         </div>
         <div id="prat3">

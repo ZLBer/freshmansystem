@@ -1,5 +1,6 @@
 package servlet.admin;
 
+import po.BasicinfoEntity;
 import po.UserEntity;
 import util.HibernateUtil;
 
@@ -20,9 +21,10 @@ public class Admin_Changepwd extends HttpServlet {
 
         String studentid=request.getParameter("sid");
         try {
+            BasicinfoEntity s=(BasicinfoEntity) HibernateUtil.get(BasicinfoEntity.class, studentid);
             UserEntity student = (UserEntity) HibernateUtil.get(UserEntity.class, studentid);
-
-            student.setPassword("123456");
+            String pwd=s.getIdNum();
+            student.setPassword(pwd.substring(pwd.length()-6,pwd.length()));
             HibernateUtil.update(student);
             request.setAttribute("message","修改成功");
         }catch (NullPointerException e)
