@@ -60,8 +60,8 @@
             <label><input type="checkbox" name="basic" value="basicinfo.masterTel-辅导员电话" />辅导员电话</label>
             <label><input type="checkbox" name="basic" value="basicinfo.brother-班主任" />班主任</label>
             <label><input type="checkbox" name="basic" value="basicinfo.brothertel-班主任电话" />班主任电话</label>
-            <label><input type="checkbox" name="basic" value="basicinfo.helper-学院电话" />学院电话</label>
-            <label><input type="checkbox" name="basic" value="basicinfo.helpertel-学校电话" />学校电话</label>
+            <label><input type="checkbox" name="basic" value="basicinfo.helper-班助姓名" />班助姓名</label>
+            <label><input type="checkbox" name="basic" value="basicinfo.helpertel-班助电话" />班助电话</label>
         </div>
         <div class="divider"></div>
         <div class="pageFormContent" layoutH="600">
@@ -75,13 +75,13 @@
             <label><input type="checkbox" name="telephone" value="stcompleteinfo.shoeNum-鞋号" />鞋号</label>
             <label><input type="checkbox" name="telephone" value="stcompleteinfo.height-身高" />身高</label>
             <label><input type="checkbox" name="telephone" value="stcompleteinfo.weight-体重" />体重</label>
-            <label><input type="checkbox" name="telephone" value="stcompleteinfo.loan-生源地贷款" />生源地贷款</label>
+            <label><input type="checkbox" name="telephone" value="stcompleteinfo.loan-生源地贷款" />是否办理生源地贷款</label>
         </div>
         <div class="divider"></div>
         <div class="pageFormContent" layoutH="600">
             <label><input type="checkbox" class="checkboxCtrl" group="traffic" onclick="selectAll(this)"/>全选</label>
-            <label><input type="checkbox" name="traffic" value="trafficinfo.trafficWay-学生联系方式" />学生联系方式</label>
-            <label><input type="checkbox" name="traffic" value="trafficinfo.company-详细地址" />详细地址</label>
+            <label><input type="checkbox" name="traffic" value="trafficinfo.trafficWay-学生到校方式" />学生到校方式</label>
+            <label><input type="checkbox" name="traffic" value="trafficinfo.company-同行人数" />同行人数</label>
             <label><input type="checkbox" name="traffic" value="trafficinfo.registerTime-预计报到时间" />预计报到时间</label>
         </div>
         <div class="divider"></div>
