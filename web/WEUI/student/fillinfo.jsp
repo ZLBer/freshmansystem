@@ -137,59 +137,82 @@
             </div>
         </label>
     </div>
-    <div class="weui-cells__title">到校方式(点击选择)</div>
+
+    <div class="weui-cells__title">是否迁移户口(点击选择)</div>
     <div class="weui-cells weui-cells_radio">
         <label class="weui-cell weui-check_label" for="7">
             <div class="weui-cell_bd">
-                <p>火车</p>
+                <p>是</p>
             </div>
             <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="trafficWay" value="火车" id="7">
+                <input type="radio" class="weui-check" name="transfer" value="是" id="7">
                 <span class="weui-icon-checked"></span>
             </div>
         </label>
         <label class="weui-cell weui-check_label" for="8">
             <div class="weui-cell_bd">
-                <p>动车或高铁</p>
+                <p>否</p>
             </div>
             <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="trafficWay" value="动车或高铁" id="8">
+                <input type="radio" class="weui-check" name="transfer" value="否" id="8">
                 <span class="weui-icon-checked"></span>
             </div>
         </label>
+    </div>
+
+    <div class="weui-cells__title">到校方式(点击选择)</div>
+    <div class="weui-cells weui-cells_radio">
         <label class="weui-cell weui-check_label" for="9">
             <div class="weui-cell_bd">
-                <p>公共汽车</p>
+                <p>火车</p>
             </div>
             <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="trafficWay" value="公共汽车" id="9">
+                <input type="radio" class="weui-check" name="trafficWay" value="火车" id="9">
                 <span class="weui-icon-checked"></span>
             </div>
         </label>
         <label class="weui-cell weui-check_label" for="10">
             <div class="weui-cell_bd">
-                <p>自驾车</p>
+                <p>动车或高铁</p>
             </div>
             <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="trafficWay" value="自驾车" id="10">
+                <input type="radio" class="weui-check" name="trafficWay" value="动车或高铁" id="10">
                 <span class="weui-icon-checked"></span>
             </div>
         </label>
         <label class="weui-cell weui-check_label" for="11">
             <div class="weui-cell_bd">
-                <p>飞机</p>
+                <p>公共汽车</p>
             </div>
             <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="trafficWay" value="飞机" id="11">
+                <input type="radio" class="weui-check" name="trafficWay" value="公共汽车" id="11">
                 <span class="weui-icon-checked"></span>
             </div>
         </label>
         <label class="weui-cell weui-check_label" for="12">
             <div class="weui-cell_bd">
+                <p>自驾车</p>
+            </div>
+            <div class="weui-cell_ft">
+                <input type="radio" class="weui-check" name="trafficWay" value="自驾车" id="12">
+                <span class="weui-icon-checked"></span>
+            </div>
+        </label>
+        <label class="weui-cell weui-check_label" for="13">
+            <div class="weui-cell_bd">
+                <p>飞机</p>
+            </div>
+            <div class="weui-cell_ft">
+                <input type="radio" class="weui-check" name="trafficWay" value="飞机" id="13">
+                <span class="weui-icon-checked"></span>
+            </div>
+        </label>
+        <label class="weui-cell weui-check_label" for="14">
+            <div class="weui-cell_bd">
                 <p>其他</p>
             </div>
             <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="trafficWay" value="其他" id="12">
+                <input type="radio" class="weui-check" name="trafficWay" value="其他" id="14">
                 <span class="weui-icon-checked"></span>
             </div>
         </label>

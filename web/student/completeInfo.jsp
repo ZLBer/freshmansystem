@@ -166,6 +166,14 @@
                         <label for="nol">不办理</label><input id="nol" type="radio" name="loan" value="不办理"></td>
                 </tr>
                 <tr>
+
+                    <td style="text-align:left">
+                        是否迁移户口<br>&nbsp;&nbsp;&nbsp;</td>
+                    <td style="text-align:left">
+                        <label for="yest">是</label><input id="yest" type="radio" name="transfer" value="是" checked>
+                        <label for="not">否</label><input id="not" type="radio" name="transfer" value="否"></td>
+                </tr>
+                <tr>
                     <td style="text-align:left">
                         <label for="company">同行人数</label></td>
                     <td style="text-align:left">

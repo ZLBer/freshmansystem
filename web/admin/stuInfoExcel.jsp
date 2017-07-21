@@ -47,7 +47,7 @@
         <c:forEach var="infoRow" items="${info}">
             <tr>
                 <c:forEach var="infoCell" items="${infoRow}">
-                    <td>${infoCell}</td>
+                    <td style="vnd.ms-excel.numberformat:@"> ${infoCell}</td>
                 </c:forEach>
             </tr>
         </c:forEach>

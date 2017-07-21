@@ -62,6 +62,7 @@
             <label><input type="checkbox" name="basic" value="basicinfo.brothertel-班主任电话" />班主任电话</label>
             <label><input type="checkbox" name="basic" value="basicinfo.helper-班助姓名" />班助姓名</label>
             <label><input type="checkbox" name="basic" value="basicinfo.helpertel-班助电话" />班助电话</label>
+            <label><input type="checkbox" name="telephone" value="stcompleteinfo.rTime-迁移户口" />是否迁移户口</label>
         </div>
         <div class="divider"></div>
         <div class="pageFormContent" layoutH="600">

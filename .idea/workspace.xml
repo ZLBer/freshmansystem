@@ -7,9 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a5e518a-6479-4bb4-8915-0a0b492d5aaa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/servlet/student/CompleteInfoServlet.java" afterPath="$PROJECT_DIR$/src/servlet/student/CompleteInfoServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEUI/student/fillinfo.jsp" afterPath="$PROJECT_DIR$/web/WEUI/student/fillinfo.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/downloadStuInfoExcel.jsp" afterPath="$PROJECT_DIR$/web/admin/downloadStuInfoExcel.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/admin/stuInfoExcel.jsp" afterPath="$PROJECT_DIR$/web/admin/stuInfoExcel.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/student/completeInfo.jsp" afterPath="$PROJECT_DIR$/web/student/completeInfo.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -114,28 +117,7 @@
     <favorites_list name="freshmansystem" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="downloadStuInfoExcel.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/admin/downloadStuInfoExcel.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1150">
-              <caret line="86" column="35" lean-forward="true" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DownloadInfoServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/servlet/admin/DownloadInfoServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="673">
-              <caret line="50" column="46" lean-forward="true" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -269,9 +251,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -914,16 +896,19 @@
       <workItem from="1499938288855" duration="5785000" />
       <workItem from="1500119163708" duration="805000" />
       <workItem from="1500125979195" duration="2094000" />
-      <workItem from="1500391416499" duration="876000" />
+      <workItem from="1500391416499" duration="1073000" />
+      <workItem from="1500392879222" duration="131000" />
+      <workItem from="1500434944499" duration="209000" />
+      <workItem from="1500645846302" duration="2155000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="325954000" />
+    <option name="totallyTimeSpent" value="328646000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -939,6 +924,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.014754098" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -947,7 +933,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.098527744" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23492064" sideWeight="0.23538461" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24281392" sideWeight="0.81475407" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25416037" sideWeight="0.81475407" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24281392" sideWeight="0.1852459" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.18465228" order="6" side_tool="true" content_ui="tabs" />
@@ -955,7 +941,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.01585504" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1030,31 +1015,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/images/photo/20143676.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/images/pic01_20140320.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/images/qq1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/images/share1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/images/share2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/images/share3.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1198,7 +1158,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1541">
           <caret line="67" column="20" lean-forward="false" selection-start-line="67" selection-start-column="20" selection-end-line="67" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1206,7 +1165,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1221,7 +1179,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1243,7 +1200,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
           <caret line="23" column="10" lean-forward="false" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1251,7 +1207,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1259,7 +1214,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1267,7 +1221,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1275,7 +1228,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1283,7 +1235,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
           <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1291,7 +1242,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="19" column="65" lean-forward="false" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1299,7 +1249,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="156" column="28" lean-forward="false" selection-start-line="156" selection-start-column="28" selection-end-line="156" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1307,7 +1256,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="56" column="134" lean-forward="false" selection-start-line="56" selection-start-column="134" selection-end-line="56" selection-end-column="134" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1315,7 +1263,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="71" column="7" lean-forward="false" selection-start-line="71" selection-start-column="7" selection-end-line="71" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1323,7 +1270,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1331,7 +1277,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1242">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1339,7 +1284,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-759">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1347,14 +1291,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="673">
           <caret line="50" column="46" lean-forward="true" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEUI/student/baodaoinfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1098">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEUI/student/stutest.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-552">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEUI/student/query_qr.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1035">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEUI/student/query.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1449">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEUI/student/fillinfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-828">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/admin/downloadStuInfoExcel.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="86" column="35" lean-forward="true" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
+        <state relative-caret-position="319">
+          <caret line="66" column="35" lean-forward="true" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
           <folding />
         </state>
       </provider>

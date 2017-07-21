@@ -68,7 +68,7 @@ public class CompleteInfoServlet extends HttpServlet {
     private void getParamAndFillEntity(HttpServletRequest request,StcompleteinfoEntity sEntity,TrafficinfoEntity tEntity){
         //后去完善信息参数
         String  phoneNum=request.getParameter("phoneNum");
-
+        String  bedding=request.getParameter("bedding");
         String  parentName=request.getParameter("parentName");
         String  parentPhoneNum=request.getParameter("parentPhoneNum");
         String  homeAddr=request.getParameter("homeAddr");
@@ -77,6 +77,7 @@ public class CompleteInfoServlet extends HttpServlet {
         String  height=request.getParameter("height");
         String  weight=request.getParameter("weight");
         String  loan=request.getParameter("loan");
+        String  transfer=request.getParameter("transfer");
         //获取交通信息参数
         String  trafficWay=request.getParameter("trafficWay");
         String  company=request.getParameter("company");
@@ -94,10 +95,12 @@ public class CompleteInfoServlet extends HttpServlet {
         System.out.println("时间为10"+trafficWay);
         System.out.println("时间为11"+company);
         System.out.println("时间为12"+registerTime);
-
+        System.out.println("时间为13"+transfer);
 
 
         //为实体类设值
+        sEntity.setBedding(bedding);
+        sEntity.setPhoneNum(phoneNum);
         sEntity.setPhoneNum(phoneNum);
         sEntity.setParentName(parentName);
         sEntity.setParentPhoneNum(parentPhoneNum);
@@ -107,7 +110,7 @@ public class CompleteInfoServlet extends HttpServlet {
         sEntity.setHeight(safeString(height));
         sEntity.setWeight(safeString(weight));
         sEntity.setLoan(loan);
-
+        sEntity.setrTime(transfer);
         tEntity.setTrafficWay(trafficWay);
         tEntity.setCompany(safeString(company));
         tEntity.setRegisterTime(registerTime);
