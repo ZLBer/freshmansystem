@@ -23,7 +23,7 @@ public class Admin_Changepwd extends HttpServlet {
         try {
             BasicinfoEntity s=(BasicinfoEntity) HibernateUtil.get(BasicinfoEntity.class, studentid);
             UserEntity student = (UserEntity) HibernateUtil.get(UserEntity.class, studentid);
-            String pwd=s.getIdNum();
+            String pwd=s.getIdNum().toLowerCase();
             student.setPassword(pwd.substring(pwd.length()-6,pwd.length()));
             HibernateUtil.update(student);
             request.setAttribute("message","修改成功");

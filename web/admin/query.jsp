@@ -65,7 +65,7 @@
         <th data-options="field:'25'">家庭详细住址</th>		<th data-options="field:'26'">是否购买军训服装</th>
         <th data-options="field:'27'">鞋号</th>				<th data-options="field:'28'">身高</th>
         <th data-options="field:'29'">体重</th>				<th data-options="field:'30'">是否办理生源地助学贷款</th>
-        <th data-options="field:'31'">注册时间</th>          <th data-options="field:'32'">到校方式</th>
+        <th data-options="field:'31'">是否迁移户口</th>          <th data-options="field:'32'">到校方式</th>
         <th data-options="field:'33'">同行人数</th>          <th data-options="field:'34'">预计报到时间</th>
         <th data-options="field:'35'">照片</th>
         </thead>

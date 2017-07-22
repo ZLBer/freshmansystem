@@ -8,6 +8,7 @@
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
       <user-name>baodao</user-name>
+      <introspection-schemas>*:baodao</introspection-schemas>
     </data-source>
   </component>
 </project>
