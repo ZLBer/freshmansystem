@@ -53,8 +53,10 @@
                 <p><a class="easyui-linkbutton" onclick="addTab('查看未报到学生','${pageContext.request.contextPath }/admin/admin_checkNoRegister?page_current=1')"  target="right">查看未报到学生</a></p>
                 <p><a class="easyui-linkbutton" onclick="addTab('查询新生','${pageContext.request.contextPath }/admin/query.jsp')"  target="right">查询新生</a></p>
             </div>
-            <div title="查看学院报到率" style="padding:10px;">
+            <div title="学院用户操作" style="padding:10px;">
                 <p><a class="easyui-linkbutton" onclick="addTab('查看学院报到率','${pageContext.request.contextPath }/admin/admin_checkBaodao.jsp')" target="right">查看学院报到率</a></p><br>
+                <p><a class="easyui-linkbutton" onclick="addTab('增加学院管理员','${pageContext.request.contextPath }/admin/add_teacher.jsp')" target="right">增加学院管理员</a></p><br>
+                <p><a class="easyui-linkbutton" onclick="addTab('查看学院管理员','${pageContext.request.contextPath }/admin/teacherList')" target="right">查看学院管理员</a></p><br>
             </div>
             <div title="修改密码" style="padding:10px">
                 <p><a class="easyui-linkbutton" onclick="addTab('修改学生密码','${pageContext.request.contextPath }/admin/changepwd.jsp')"  target="right">修改学生密码</a></p>

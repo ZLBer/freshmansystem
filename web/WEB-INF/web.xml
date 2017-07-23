@@ -426,6 +426,46 @@
         <servlet-name>SearchNews</servlet-name>
         <servlet-class>servlet.admin.SearchNews</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AddTeacher</servlet-name>
+        <servlet-class>servlet.admin.AddTeacher</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TeacherList</servlet-name>
+        <servlet-class>servlet.admin.TeacherList</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteTeacher</servlet-name>
+        <servlet-class>servlet.admin.DeleteTeacher</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteTeacher</servlet-name>
+        <url-pattern>/admin/deleteTeacher</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AlterTeacher</servlet-name>
+        <servlet-class>servlet.admin.AlterTeacher</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateTeacher</servlet-name>
+        <servlet-class>servlet.admin.UpdateTeacher</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateTeacher</servlet-name>
+        <url-pattern>/admin/updateTeacher</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AlterTeacher</servlet-name>
+        <url-pattern>/admin/alterTeacher</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TeacherList</servlet-name>
+        <url-pattern>/admin/teacherList</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddTeacher</servlet-name>
+        <url-pattern>/admin/addTeacher</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>SearchNews</servlet-name>
         <url-pattern>/admin/searchNews</url-pattern>
