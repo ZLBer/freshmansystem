@@ -85,7 +85,7 @@ public class GetUserID extends HttpServlet {
         }
         else if(state.equals("ws")){                        //学生完善自己的信息--未完成
 
-            request.getRequestDispatcher("WEUI/student/fillinfo.jsp").forward(request, response);
+            request.getRequestDispatcher("student/beforeComplete").forward(request, response);
         }
         else if(state.equals("lcx")){                             //学院查看新生信息
             System.out.println("学院开始查看新生信息");

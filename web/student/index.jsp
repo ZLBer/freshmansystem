@@ -55,7 +55,7 @@
             <div title="完善信息" style="padding:10px;">
                 <p><a href="http://xuegongchu.sdau.edu.cn/s/91/t/43/p/1/c/10383/list.htm" class="easyui-linkbutton" onclick="addTab('新生入学学习资料','')" >新生入学学习资料</a></p><br>
                 <p><a class="easyui-linkbutton" onclick="addTab('填写调查问卷','${pageContext.request.contextPath}/student/queryProblem')" target="right">填写调查问卷</a></p><br>
-                <p><a class="easyui-linkbutton" onclick="addTab('完善个人信息','${pageContext.request.contextPath}/student/completeInfo.jsp')" target="right">完善个人信息</a></p><br>
+                <p><a class="easyui-linkbutton" onclick="addTab('完善个人信息','${pageContext.request.contextPath}/student/beforeComplete')" target="right">完善个人信息</a></p><br>
                 <p><a class="easyui-linkbutton" onclick="addTab('修改微信绑定手机号','${pageContext.request.contextPath}/student/alterTel.jsp')"  target="right">修改微信绑定手机号</a></p>
                 <!--<p><a class="easyui-linkbutton" onclick="addTab('修改微信绑定手机号','${pageContext.request.contextPath}/student/alterTel.jsp')" target="right">修改微信绑定手机号</a></p><br>-->
             </div>

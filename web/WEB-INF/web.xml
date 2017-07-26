@@ -462,6 +462,15 @@
         <servlet-name>List</servlet-name>
         <servlet-class>servlet.admin.List</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>BeforeComplete</servlet-name>
+        <servlet-class>servlet.student.BeforeComplete</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BeforeComplete</servlet-name>
+        <url-pattern>/student/beforeComplete</url-pattern>
+    </servlet-mapping>
+
     <servlet-mapping>
         <servlet-name>List</servlet-name>
         <url-pattern>/admin/list</url-pattern>

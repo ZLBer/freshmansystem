@@ -167,7 +167,7 @@
 </div>
 <div class="weui-cell">
     <div class="weui=cell__bd">
-        <label class="weui_label">注册时间${stu[30]}</label>
+        <label class="weui_label">是否迁移户口${stu[30]}</label>
     </div>
 </div>
 <div class="weui-msg__opr-area">

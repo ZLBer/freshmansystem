@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title>完善信息</title>
@@ -25,7 +26,7 @@
                 <p>需要</p>
             </div>
             <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="bedding" value="需要" id="1">
+                <input type="radio" class="weui-check" name="bedding" value="需要" id="1"  <c:if test="${student.bedding=='需要'||student.bedding==''}"> checked </c:if>>
                 <span class="weui-icon-checked"></span>
             </div>
         </label>
@@ -34,7 +35,7 @@
                 <p>不需要</p>
             </div>
             <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="bedding" value="不需要" id="2">
+                <input type="radio" class="weui-check" name="bedding" value="不需要" id="2" <c:if test="${student.bedding=='不需要'}"> checked </c:if>>
                 <span class="weui-icon-checked"></span>
             </div>
         </label>
@@ -44,7 +45,7 @@
                 <label class="weui_label">联系方式：</label>
             </div>
             <div class="weui-cell__bd weui_cell_primary">
-                <input class="weui-input" type="number"  name="phoneNum" placeholder="在此输入联系方式" required/>
+                <input class="weui-input" type="number"  name="phoneNum" value="${student.phoneNum}" placeholder="在此输入联系方式" required/>
             </div>
         </div>
         <div class="weui-cell">
@@ -52,7 +53,7 @@
                 <label class="weui_label">家长姓名：</label>
             </div>
             <div class="weui-cell__bd weui_cell_primary">
-                <input class="weui-input" type="text"  name="parentName" placeholder="在此输入家长姓名" required/>
+                <input class="weui-input" type="text"  name="parentName" value="${student.parentName}" placeholder="在此输入家长姓名" required/>
             </div>
         </div>
         <div class="weui-cell">
@@ -60,7 +61,7 @@
                 <label class="weui_label">家长联系方式：</label>
             </div>
             <div class="weui-cell__bd weui_cell_primary">
-                <input class="weui-input" type="number"  name="parentPhoneNum" placeholder="在此输入家长联系方式" required/>
+                <input class="weui-input" type="number"  name="parentPhoneNum" value="${student.parentPhoneNum}" placeholder="在此输入家长联系方式" required/>
             </div>
         </div>
         <div class="weui-cell">
@@ -68,7 +69,7 @@
                 <label class="weui_label">家庭详细地址：</label>
             </div>
             <div class="weui-cell__bd weui_cell_primary">
-                <input class="weui-input" type="text"  name="homeAddr" placeholder="在此输入家庭详细地址" required/>
+                <input class="weui-input" type="text"  name="homeAddr"  value="${student.homeAddr}" placeholder="在此输入家庭详细地址" required/>
             </div>
         </div>
     <div class="weui-cells__title">是否购买军训服(点击选择)</div>
@@ -78,7 +79,7 @@
                 <p>购买</p>
             </div>
             <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="militaryClothing" value="购买" id="3">
+                <input type="radio" class="weui-check" name="militaryClothing" value="购买" id="3" <c:if test="${student.militaryClothing=='购买'||student.militaryClothing==''}">checked</c:if>>
                 <span class="weui-icon-checked"></span>
             </div>
         </label>
@@ -87,7 +88,7 @@
                 <p>不购买</p>
             </div>
             <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="militaryClothing" value="不购买" id="4">
+                <input type="radio" class="weui-check" name="militaryClothing" value="不购买" id="4" <c:if test="${student.militaryClothing=='不购买'}">checked</c:if>>
                 <span class="weui-icon-checked"></span>
             </div>
         </label>
@@ -97,7 +98,7 @@
             <label class="weui_label">鞋号：</label>
         </div>
         <div class="weui-cell__bd weui_cell_primary">
-            <input class="weui-input" type="number"  name="shoeNum" placeholder="不购买可不填" >
+            <input class="weui-input" type="number"  name="shoeNum" value="${student.shoeNum}" placeholder="不购买可不填" >
         </div>
     </div>
     <div class="weui-cell">
@@ -105,7 +106,7 @@
             <label class="weui_label">身高：</label>
         </div>
         <div class="weui-cell__bd weui_cell_primary">
-            <input class="weui-input" type="number"  name="height" placeholder="不购买可不填（单位米）" >
+            <input class="weui-input" type="number"  name="height" value="${student.height}" placeholder="不购买可不填（单位米）" >
         </div>
     </div>
     <div class="weui-cell">
@@ -113,7 +114,7 @@
             <label class="weui_label">体重：</label>
         </div>
         <div class="weui-cell__bd weui_cell_primary">
-            <input class="weui-input" type="number"  name="weight" placeholder="不购买可不填（单位公斤）" >
+            <input class="weui-input" type="number"  name="weight" value="${student.weight}" placeholder="不购买可不填（单位公斤）" >
         </div>
     </div>
     <div class="weui-cells__title">是否办理生源基地贷款(点击选择)</div>
@@ -123,7 +124,7 @@
                 <p>办理</p>
             </div>
             <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="loan" value="办理" id="5">
+                <input type="radio" class="weui-check" name="loan" value="办理" id="5" <c:if test="${student.loan=='办理'}">checked</c:if>>
                 <span class="weui-icon-checked"></span>
             </div>
         </label>
@@ -132,7 +133,7 @@
                 <p>不办理</p>
             </div>
             <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="loan" value="不办理" id="6">
+                <input type="radio" class="weui-check" name="loan" value="不办理" id="6"  <c:if test="${student.loan=='不办理'||student.loan==''}">checked</c:if>>
                 <span class="weui-icon-checked"></span>
             </div>
         </label>
@@ -145,16 +146,16 @@
                 <p>是</p>
             </div>
             <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="transfer" value="是" id="7">
+                <input type="radio" class="weui-check" name="transfer" value="是" id="7" <c:if test="${student.rTime=='是'}">checked</c:if>>
                 <span class="weui-icon-checked"></span>
             </div>
         </label>
-        <label class="weui-cell weui-check_label" for="8">
+        <label class="weui-cell weui-check_label" for="8" >
             <div class="weui-cell_bd">
                 <p>否</p>
             </div>
             <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="transfer" value="否" id="8">
+                <input type="radio" class="weui-check" name="transfer" value="否" id="8" <c:if test="${student.rTime=='否'}">checked</c:if>>
                 <span class="weui-icon-checked"></span>
             </div>
         </label>
@@ -167,7 +168,7 @@
                 <p>火车</p>
             </div>
             <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="trafficWay" value="火车" id="9">
+                <input type="radio" class="weui-check" name="trafficWay" value="火车" id="9"  <c:if test="${traffic.trafficWay=='火车'}">checked</c:if>>
                 <span class="weui-icon-checked"></span>
             </div>
         </label>
@@ -176,7 +177,7 @@
                 <p>动车或高铁</p>
             </div>
             <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="trafficWay" value="动车或高铁" id="10">
+                <input type="radio" class="weui-check" name="trafficWay" value="动车或高铁" id="10"  <c:if test="${traffic.trafficWay=='动车或高铁'}">checked</c:if>>
                 <span class="weui-icon-checked"></span>
             </div>
         </label>
@@ -185,7 +186,7 @@
                 <p>公共汽车</p>
             </div>
             <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="trafficWay" value="公共汽车" id="11">
+                <input type="radio" class="weui-check" name="trafficWay" value="公共汽车" id="11" <c:if test="${traffic.trafficWay=='公共汽车'}">checked</c:if>>
                 <span class="weui-icon-checked"></span>
             </div>
         </label>
@@ -194,7 +195,7 @@
                 <p>自驾车</p>
             </div>
             <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="trafficWay" value="自驾车" id="12">
+                <input type="radio" class="weui-check" name="trafficWay" value="自驾车" id="12" <c:if test="${traffic.trafficWay=='自驾车'}">checked</c:if>>
                 <span class="weui-icon-checked"></span>
             </div>
         </label>
@@ -203,7 +204,7 @@
                 <p>飞机</p>
             </div>
             <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="trafficWay" value="飞机" id="13">
+                <input type="radio" class="weui-check" name="trafficWay" value="飞机" id="13" <c:if test="${traffic.trafficWay=='飞机'}">checked</c:if>>
                 <span class="weui-icon-checked"></span>
             </div>
         </label>
@@ -212,7 +213,7 @@
                 <p>其他</p>
             </div>
             <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="trafficWay" value="其他" id="14">
+                <input type="radio" class="weui-check" name="trafficWay" value="其他" id="14" <c:if test="${traffic.trafficWay=='其他'}">checked</c:if>>
                 <span class="weui-icon-checked"></span>
             </div>
         </label>
@@ -222,7 +223,7 @@
             <label class="weui_label">同行人数：</label>
         </div>
         <div class="weui-cell__bd weui_cell_primary">
-            <input class="weui-input" type="number"  name="company" placeholder="在此填写同行人数" >
+            <input class="weui-input" type="number"  name="company" value="${traffic.company}" placeholder="在此填写同行人数" >
         </div>
     </div>
     <div class="weui-cell">
@@ -230,7 +231,7 @@
             <label class="weui_label">预计报道时间：</label>
         </div>
         <div class="weui-cell__bd weui_cell_primary">
-            <input class="weui-input" type="text"  name="registerTime" placeholder="在此填写报道时间" >
+            <input class="weui-input" type="text"  name="registerTime" value="${traffic.registerTime}" placeholder="在此填写报道时间" >
         </div>
     </div>
     <div class="weui-cells__tips">格式：YYYY-MM-DD</div>

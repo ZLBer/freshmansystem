@@ -46,11 +46,7 @@
         <label class="weui_label">专业 :${student.major}</label>
     </div>
 </div>
-<div class="weui-cell">
-    <div class="weui=cell__bd">
-        <label class="weui_label">班级 :${student.classNum}</label>
-    </div>
-</div>
+
 
 
 <div class="weui-msg__opr-area">
