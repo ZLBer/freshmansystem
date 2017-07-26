@@ -55,7 +55,7 @@
                 请输入老师的登录密码：
             </td>
             <td>
-                <input type="text" name="teacherpassword">
+                <input required="required" type="text" name="teacherpassword">
             </td>
         </tr>
         <tr>

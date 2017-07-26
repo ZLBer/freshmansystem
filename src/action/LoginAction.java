@@ -77,13 +77,17 @@ public class LoginAction {
 				if (userList.size() > 0)
 					user = userList.get(0);
 				if (user == null) {
+
 					msg = "id不存在";
+
 				} else {
 					if ((userpwd).equals(user.getPassword())) {
 						ActionContext.getContext().getSession().put("user", user);
 						return "studentsuccess";
 					} else {
+
 						msg = "密码不正确";
+
 					}
 				}
 			}
@@ -104,9 +108,10 @@ public class LoginAction {
 						msg = "密码不正确";
 					}
 				}
-			} else msg = "id不存在";
+			}
 		}
-		else {msg="验证码不正确";}
+		else {
+			msg="验证码不正确";}
 		return "null";
 	}
 }

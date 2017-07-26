@@ -49,9 +49,10 @@
     </div>-->
     <div data-options="region:'west',split:false,iconCls:'icon-application_home',collapsed:false,collapsible:false" title="主菜单" style="width:200px;">
         <div class="easyui-accordion" data-options="fit:true,border:false">
-            <div title="查询新生" style="padding:10px">
+            <div title="学生用户操作" style="padding:10px">
                 <p><a class="easyui-linkbutton" onclick="addTab('查看未报到学生','${pageContext.request.contextPath }/admin/admin_checkNoRegister?page_current=1')"  target="right">查看未报到学生</a></p>
                 <p><a class="easyui-linkbutton" onclick="addTab('查询新生','${pageContext.request.contextPath }/admin/query.jsp')"  target="right">查询新生</a></p>
+                <p><a class="easyui-linkbutton" onclick="addTab('通知推送','${pageContext.request.contextPath }/admin/sendMessage.jsp')"  target="right">通知推送</a></p>
             </div>
             <div title="学院用户操作" style="padding:10px;">
                 <p><a class="easyui-linkbutton" onclick="addTab('查看学院报到率','${pageContext.request.contextPath }/admin/admin_checkBaodao.jsp')" target="right">查看学院报到率</a></p><br>
