@@ -90,15 +90,14 @@ public class CoreService {
 
 				else if (eventType.equals(MessageUtil.EVENT_TYPE_SCAN)) {
 					// TODO
-
-
 				}
-//////////////// 扫描带参数二维码-----------------------------------------------------
+//////////////// 扫描带参数二维码-----------------------------------------------------------------------
 				else if (eventType.equals(MessageUtil.EVENT_TYPE_SCANCODE_WAITMSG)){
 					// TODO 处理扫码推且弹出事件
 					System.out.println("进入扫描参数二维码事件");
 					//获取二维码里的参数
 					String ScanResult =requestMap.get("ScanResult");
+
 					String[] a=ScanResult.split("'|,");
 
 					String stunum=a[1];			//获取学生学号
@@ -110,17 +109,18 @@ public class CoreService {
 					String helper=a[7];			//获取学生的班助姓名
 					String helpertel=a[8];		//获取学生的班助电话
 					String dormNum=a[9];		//获取学生的宿舍
+					String classroom=a[10];		//获取学生的班级
 
 					//定义check类对象
 					check c1=new check();
 					System.out.println("老师的工号为："+fromUserName);
 					String p=c1.checkcollege(fromUserName,stunum);
 
-					if(p.equals("true")) {											//如果学生和老师是一个学院
+					if(p.equals("true")) {								//如果学生和老师是一个学院
 						//推送给学院的消息
-						respContent="学号为："+stunum+"\n姓名:"+stuname+"\n专业:"+stumajor+"\n报道成功！"+"\n学生的宿舍为:"+dormNum;
+						respContent="学号为："+stunum+"\n姓名:"+stuname+"\n专业:"+stumajor+"\n报到成功！"+"\n学生的宿舍为:"+dormNum+"\n学生的班级为："+classroom;
 						//推送给新生的消息
-						String stext="学号为："+stunum+"\n姓名:"+stuname+"\n学院:"+stucollege+"\n报道成功！欢迎来到山东农业大学！\n您的宿舍为:"+dormNum+"\n班主任姓名:"+brother+"  联系电话:"+brothertel+"\n班主任助理姓名:"+helper+"  联系电话:"+helpertel;
+						String stext="学号为："+stunum+"\n姓名:"+stuname+"\n学院:"+stucollege+"\n报到成功！欢迎来到山东农业大学！\n您的宿舍为:"+dormNum+"\n班主任姓名:"+brother+"  联系电话:"+brothertel+"\n班主任助理姓名:"+helper+"  联系电话:"+helpertel+"\n学生的班级为："+classroom;
 
 						//创建发送消息对象
 						SMessage smsg=new SMessage();
@@ -139,9 +139,9 @@ public class CoreService {
 					}
 					else if(p.equals("false")){											//如果老师学生不在一个学院
 						//推送给学院的消息
-						respContent="学号:"+stunum+"\n姓名："+stuname+"\n报道失败！ta不属于您的学院！";
+						respContent="学号:"+stunum+"\n姓名："+stuname+"\n报到失败！ta不属于您的学院！";
 						//推送给新生的消息
-						String stext="学号:"+stunum+"\n姓名："+stuname+"\n报道失败，您不属于该学院！\n"+"请前往"+stucollege+"报道！";
+						String stext="学号:"+stunum+"\n姓名："+stuname+"\n报到失败，您不属于该学院！\n"+"请前往"+stucollege+"报到！";
 						//创建发送消息对象
 						SMessage smsg=new SMessage();
 						//拼接url
@@ -159,9 +159,9 @@ public class CoreService {
 					}
 					else if(p.equals("yibaodao")){									//如果学生已经报道
 						//推送给学院的消息
-						respContent="学号:"+stunum+"\n姓名："+stuname+"\nta已经报道了,请勿重复报道";
+						respContent="学号:"+stunum+"\n姓名："+stuname+"\nta已经报到了,请勿重复报到";
 						//推送给新生的消息
-						String stext="学号:"+stunum+"\n姓名："+stuname+"\n您已经报道了,请勿重复报道";
+						String stext="学号:"+stunum+"\n姓名："+stuname+"\n您已经报到了,请勿重复报到";
 						//创建发送消息对象
 						SMessage smsg=new SMessage();
 

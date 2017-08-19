@@ -59,8 +59,8 @@ public class Admin_CheckBaodao extends HttpServlet {
         String hql="where spotRegister='已报到'";
         double schoolYes= HibernateUtil.recordCount("RegisterinfoEntity",hql);
         double schoolcount=HibernateUtil.recordCount("RegisterinfoEntity","");
-
-        request.setAttribute("school",schoolYes/schoolcount);
+        String register=Math.round(schoolYes/schoolcount*100)+"%";
+        request.setAttribute("school",register);
         request.setAttribute("all",all);
 
         if(session.getAttribute("userid")!=null){
