@@ -10,13 +10,13 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-    <title>查看未报道学生</title>
+    <title>查看未报到学生</title>
     <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/1.1.0/weui.css">
 </head>
 <body>
 
 <c:forEach var="student" begin="${(page_current-1)*page_size}" end="${page_current*page_size-1}" items="${students}">
-    <a class="weui-cell weui-cell_access" href="WEUI/college/reasonfill.jsp?sno=${student.sno}&collegeid=<%=session.getAttribute("collegeid")%>">
+    <a class="weui-cell weui-cell_access" href="${pageContext.request.contextPath}/WEUI/college/reasonfill.jsp?sno=${student.sno}&collegeid=<%=session.getAttribute("collegeid")%>">
         <div class="weui-cell__hd">&nbsp;※</div>
         <div class="weui-cell__bd">
             <p>${student.sno}</p>

@@ -98,9 +98,9 @@ public class ManualBaodao extends HttpServlet {
                 System.out.println("发送消息失败");
             }
         }
-        else if(p.equals("yibaodao")){                                          //防止重复报道
+        else if(p.equals("yibaodao")){                                          //防止重复报到
             Scontent="您已经报到！请勿重复报到！";
-            Lcontent="学生:"+stuname+"\n学号:"+sid+"\n报道失败,ta已经报到了！";
+            Lcontent="学生:"+stuname+"\n学号:"+sid+"\n报到失败,ta已经报到了！";
             //拼接url
             String RequestURL=smsg.POST_URL.replace("ACCESS_TOKEN",access_token);
             //给学生发送消息
@@ -111,7 +111,7 @@ public class ManualBaodao extends HttpServlet {
             int result1 = WeixinUtil.PostMessage(access_token, "POST", RequestURL,PostData1);
             // 打印结果
             if (0 == result && 0 == result1) {
-                request.setAttribute("msg","ta已经报道了！\n请勿重复报到！");
+                request.setAttribute("msg","ta已经报到了！\n请勿重复报到！");
                 request.getRequestDispatcher("/WEUI/operate_fail.jsp").forward(request, response);
             } else {
                 request.setAttribute("msg","报到失败！");

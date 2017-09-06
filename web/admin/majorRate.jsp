@@ -16,7 +16,7 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
 	<script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
 <head>
-    <title>专业报道率</title>
+    <title>专业报到率</title>
 </head>
 <body>
 <center>

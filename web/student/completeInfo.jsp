@@ -85,8 +85,16 @@
                 <tr>
                     <td style="text-align:left">是否需要卧具<br>&nbsp;&nbsp;&nbsp;</td>
                     <td style="text-align:left">
-                        <label for="yesb">需要</label><input id="yesb" type="radio" name="bedding" value="需要" <c:if test="${student.bedding=='需要'}"> checked </c:if> >
-                        <label for="nob">不需要</label><input id="nob" type="radio" name="bedding" value="不需要"  <c:if test="${student.bedding=='不需要'}"> checked </c:if> >
+                        <%--<label for="yesb">需要</label><input id="yesb" type="radio" name="bedding" value="需要" <c:if test="${student.bedding=='需要'}"> checked </c:if> >--%>
+                        <%--<label for="nob">不需要</label><input id="nob" type="radio" name="bedding" value="不需要"  <c:if test="${student.bedding=='不需要'}"> checked </c:if> >--%>
+                         <input type="hidden" name="bedding" value="${student.bedding}">
+                            <label >
+                                <c:choose>
+                                    <c:when test="${student.bedding=='需要'}">需要</c:when>
+                                    <c:when test="${student.bedding=='不需要'}">不需要</c:when>
+                                    <c:otherwise> </c:otherwise>
+                                </c:choose>
+                            </label>
                     </td>
                 </tr>
                 <tr>
@@ -163,8 +171,17 @@
                     <td style="text-align:left">
                         是否办理生源基地贷款<br>&nbsp;&nbsp;&nbsp;</td>
                     <td style="text-align:left">
-                        <label for="yesl">办理</label><input id="yesl" type="radio" name="loan" value="办理" <c:if test="${student.loan=='办理'}">checked</c:if>>
-                        <label for="nol">不办理</label><input id="nol" type="radio" name="loan" value="不办理"  <c:if test="${student.loan=='不办理'}">checked</c:if>></td>
+                        <%--<label for="yesl">办理</label><input id="yesl" type="radio" name="loan" value="办理" <c:if test="${student.loan=='办理'}">checked</c:if>>--%>
+                        <%--<label for="nol">不办理</label><input id="nol" type="radio" name="loan" value="不办理"  <c:if test="${student.loan=='不办理'}">checked</c:if>>--%>
+                            <input type="hidden" name="loan" value="${student.loan}">
+                            <label >
+                                <c:choose>
+                                    <c:when test="${student.loan=='办理'}">办理</c:when>
+                                    <c:when test="${student.loan=='不办理'}">不办理</c:when>
+                                    <c:otherwise> </c:otherwise>
+                                </c:choose>
+                            </label>
+                    </td>
                 </tr>
                 <tr>
 
@@ -182,7 +199,7 @@
                 </tr>
                 <tr>
                     <td style="text-align:left">
-                        <label for="registerTime">预计报道时间(格式:YYYY-MM-DD)</label></td>
+                        <label for="registerTime">预计报到时间(格式:YYYY-MM-DD)</label></td>
                     <td style="text-align:left">
                         <input class="easyui-textbox" id="registerTime" type="text" name="registerTime" value="${traffic.registerTime}"></td>
                 </tr>

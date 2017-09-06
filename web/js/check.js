@@ -24,7 +24,7 @@ var formCheck={
 	},
 	modifyDelayInfo:function(){
 //		if(isEmpty($("#baodaozige").val())){
-//			this.tip("是否保留报道资格不能为空！");
+//			this.tip("是否保留报到资格不能为空！");
 //			return false;
 //		}
 		if(isEmpty($("#yuanyin").val())){
@@ -39,7 +39,7 @@ var formCheck={
 	},
 	modifyDelayInfo:function(){
 //		if(isEmpty($("#baodaozige").val())){
-//			this.tip("是否保留报道资格不能为空！");
+//			this.tip("是否保留报到资格不能为空！");
 //			return false;
 //		}
 		if(isEmpty($("#yuanyin").val())){

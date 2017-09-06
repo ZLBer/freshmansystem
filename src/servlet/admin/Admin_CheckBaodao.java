@@ -5,6 +5,7 @@ import po.MajorEntity;
 import po.RegisterinfoEntity;
 import util.HibernateUtil;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -62,7 +63,7 @@ public class Admin_CheckBaodao extends HttpServlet {
         String register=Math.round(schoolYes/schoolcount*100)+"%";
         request.setAttribute("school",register);
         request.setAttribute("all",all);
-
+        request.setAttribute("schoolYes", (int)schoolYes);
         if(session.getAttribute("userid")!=null){
             request.getRequestDispatcher("/WEUI/admin/admin_baodaoinfo.jsp").forward(request, response);
         }else {

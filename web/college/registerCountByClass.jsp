@@ -12,7 +12,7 @@
 </head>
 <body>
     <table border="1">
-        <tr><th>班级</th><th>报道率</th><th>班级总人数</th><th>已报到人数</th></tr>
+        <tr><th>班级</th><th>报到率</th><th>班级总人数</th><th>已报到人数</th></tr>
             <td>
             <table>
                 <c:forEach items="${classlist}" var="cla">

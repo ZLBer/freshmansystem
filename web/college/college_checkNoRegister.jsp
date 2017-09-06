@@ -17,7 +17,7 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
 	<script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
 <head>
-    <title>查看未报道学生</title>
+    <title>查看未报到学生</title>
 </head>
 <body style="text-align:center">
 <table border="1" frame="void" class="easyui-datagrid" id="content"
@@ -33,7 +33,7 @@
         <tr>
             <td>${student.sno}</td>
             <td>${student.reason}</td>
-            <td><a href="college_beizhu.jsp?sno=${student.sno}&collegeid=${user.college}">备注未报道原因</a></td>
+            <td><a href="college_beizhu.jsp?sno=${student.sno}&collegeid=${user.college}">备注未报到原因</a></td>
         </tr>
         </tbody>
     </c:forEach>

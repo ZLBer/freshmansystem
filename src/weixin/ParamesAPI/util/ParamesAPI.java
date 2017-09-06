@@ -45,7 +45,8 @@ public class ParamesAPI {
 	public static int AgentId_xinxi = 22;  		 //学院用户
 	public static int AgentId_qiye = 30;  		 //企业用户
 	public static int AgentId_xuesheng = 35;     //学生用户
-	public static int AgentId_xinsheng=37;		 //新生报道
+	public static int AgentId_xinsheng=37;		 //新生报到
 	public static int AgentId_zhaoshengban=39;		//招生办
+
 
 };

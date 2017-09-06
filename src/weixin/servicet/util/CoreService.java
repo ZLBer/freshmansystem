@@ -157,7 +157,7 @@ public class CoreService {
 							System.out.println("发送消息失败");
 						}
 					}
-					else if(p.equals("yibaodao")){									//如果学生已经报道
+					else if(p.equals("yibaodao")){									//如果学生已经报到
 						//推送给学院的消息
 						respContent="学号:"+stunum+"\n姓名："+stuname+"\nta已经报到了,请勿重复报到";
 						//推送给新生的消息

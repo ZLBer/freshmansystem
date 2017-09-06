@@ -15,6 +15,9 @@
 </head>
 <body>
 <div class="weui-cells">
+    学校整体报到率：${school},报到总人数：${schoolYes}。
+</div>
+<div class="weui-cells">
     <c:forEach var="college"  items="${all}">
         <a class="weui-cell weui-cell_access" href="${pageContext.request.contextPath }/admin/gotoMajorDetailServlet?collegeId=${college[0]}">
             <div class="weui-cell__hd">※&nbsp;&nbsp;</div>

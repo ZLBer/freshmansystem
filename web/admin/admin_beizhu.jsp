@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>备注未报道原因</title>
+    <title>备注报到原因</title>
     <link rel="stylesheet" type="text/css" href="css/IconExtension.css">
     <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
     <link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/demo/demo.css">

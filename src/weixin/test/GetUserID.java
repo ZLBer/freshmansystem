@@ -74,7 +74,7 @@ public class GetUserID extends HttpServlet {
 
         /////////////////////////////////////////////////////////////////判断state值，跳转到不同的地址
 
-        if(state.equals("qr")){                             //二维码报道
+        if(state.equals("qr")){                             //二维码报到
 
             //跳转到获取学生信息的servlet
             request.getRequestDispatcher("QueryStudent").forward(request,response);
@@ -149,7 +149,7 @@ public class GetUserID extends HttpServlet {
         }
         else if(state.equals("xywbd")){                      //学院查看所有未报到学生&备注未报到原因
 
-            String condition = "where adminname =" + UserID;
+            String condition = "where adminname ='" + UserID+"'";
             List<AdminEntity> teachers = HibernateUtil.query("AdminEntity", condition);
             AdminEntity teacher = new AdminEntity();
             if (teachers.size() > 0) {

@@ -59,7 +59,7 @@
         </div>
     </div>
     <br>
-    <a href="javascript:document.baodaoinfo.action='ManualBaodao';document.baodaoinfo.submit();" class="weui-btn weui-btn_primary">点击报道</a>
+    <a href="javascript:document.baodaoinfo.action='ManualBaodao';document.baodaoinfo.submit();" class="weui-btn weui-btn_primary">点击报到</a>
 </form>
 </body>
 </html>

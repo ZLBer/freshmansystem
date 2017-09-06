@@ -583,6 +583,13 @@
         <servlet-name>Admin_checkNoRegister</servlet-name>
         <url-pattern>/admin/admin_checkNoRegister</url-pattern>
     </servlet-mapping>
-
+    <servlet>
+        <servlet-name>DownloadRegisterInfoServlet</servlet-name>
+        <servlet-class>servlet.admin.DownloadStuRegInfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DownloadRegisterInfoServlet</servlet-name>
+        <url-pattern>/admin/downloadRegisterInfo</url-pattern>
+    </servlet-mapping>
 
 </web-app>

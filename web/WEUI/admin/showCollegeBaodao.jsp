@@ -22,7 +22,7 @@
                 <p> ${infoRow[1]}&nbsp;&nbsp;</p>
             </div>
             <div class="weui-cell__bd">
-                <p> 已报道：${infoRow[3]}人</p>
+                <p> 已报到：${infoRow[3]}人</p>
             </div>
             <div class="weui-cell__ft">
                     ${infoRow[4]}

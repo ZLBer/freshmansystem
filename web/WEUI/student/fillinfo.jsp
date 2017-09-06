@@ -20,26 +20,34 @@
 <form  method="post" name="xinxi">
 
     <div class="weui-cells__title">是否需要卧具(点击选择)</div>
-    <div class="weui-cells weui-cells_radio">
-        <label class="weui-cell weui-check_label" for="1">
-            <div class="weui-cell_bd">
-                <p>需要</p>
-            </div>
-            <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="bedding" value="需要" id="1"  <c:if test="${student.bedding=='需要'||student.bedding==''}"> checked </c:if>>
-                <span class="weui-icon-checked"></span>
-            </div>
-        </label>
-        <label class="weui-cell weui-check_label" for="2">
-            <div class="weui-cell_bd">
-                <p>不需要</p>
-            </div>
-            <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="bedding" value="不需要" id="2" <c:if test="${student.bedding=='不需要'}"> checked </c:if>>
-                <span class="weui-icon-checked"></span>
-            </div>
-        </label>
-    </div>
+    <label class="weui_label">
+        <input type="hidden" name="bedding" value="${student.bedding}">
+        <c:choose>
+            <c:when test="${student.bedding=='需要'}">需要</c:when>
+            <c:when test="${student.bedding=='不需要'}">不需要</c:when>
+            <c:otherwise> </c:otherwise>
+        </c:choose>
+    </label>
+    <%--<div class="weui-cells weui-cells_radio">--%>
+        <%--<label class="weui-cell weui-check_label" for="1">--%>
+            <%--<div class="weui-cell_bd">--%>
+                <%--<p>需要</p>--%>
+            <%--</div>--%>
+            <%--<div class="weui-cell_ft">--%>
+                <%--<input type="radio" class="weui-check" name="bedding" value="需要" id="1"  <c:if test="${student.bedding=='需要'||student.bedding==''}"> checked </c:if>>--%>
+                <%--<span class="weui-icon-checked"></span>--%>
+            <%--</div>--%>
+        <%--</label>--%>
+        <%--<label class="weui-cell weui-check_label" for="2">--%>
+                <%--<div class="weui-cell_bd">--%>
+                <%--<p>不需要</p>--%>
+            <%--</div>--%>
+            <%--<div class="weui-cell_ft">--%>
+                <%--<input type="radio" class="weui-check" name="bedding" value="不需要" id="2" <c:if test="${student.bedding=='不需要'}"> checked </c:if>>--%>
+                <%--<span class="weui-icon-checked"></span>--%>
+            <%--</div>--%>
+        <%--</label>--%>
+    <%--</div>--%>
         <div class="weui-cell">
             <div class="weui-cell__bd">
                 <label class="weui_label">联系方式：</label>
@@ -118,26 +126,34 @@
         </div>
     </div>
     <div class="weui-cells__title">是否办理生源基地贷款(点击选择)</div>
-    <div class="weui-cells weui-cells_radio">
-        <label class="weui-cell weui-check_label" for="5">
-            <div class="weui-cell_bd">
-                <p>办理</p>
-            </div>
-            <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="loan" value="办理" id="5" <c:if test="${student.loan=='办理'}">checked</c:if>>
-                <span class="weui-icon-checked"></span>
-            </div>
-        </label>
-        <label class="weui-cell weui-check_label" for="6">
-            <div class="weui-cell_bd">
-                <p>不办理</p>
-            </div>
-            <div class="weui-cell_ft">
-                <input type="radio" class="weui-check" name="loan" value="不办理" id="6"  <c:if test="${student.loan=='不办理'||student.loan==''}">checked</c:if>>
-                <span class="weui-icon-checked"></span>
-            </div>
-        </label>
-    </div>
+    <label class="weui_label">
+    <input type="hidden" name="loan" value="${student.loan}">
+        <c:choose>
+            <c:when test="${student.loan=='办理'}">办理</c:when>
+            <c:when test="${student.loan=='不办理'}">不办理</c:when>
+            <c:otherwise> </c:otherwise>
+        </c:choose>
+    </label>
+    <%--<div class="weui-cells weui-cells_radio">--%>
+        <%--<label class="weui-cell weui-check_label" for="5">--%>
+            <%--<div class="weui-cell_bd">--%>
+                <%--<p>办理</p>--%>
+            <%--</div>--%>
+            <%--<div class="weui-cell_ft">--%>
+                <%--<input type="radio" class="weui-check" name="loan" value="办理" id="5" <c:if test="${student.loan=='办理'}">checked</c:if>>--%>
+                <%--<span class="weui-icon-checked"></span>--%>
+            <%--</div>--%>
+        <%--</label>--%>
+        <%--<label class="weui-cell weui-check_label" for="6">--%>
+            <%--<div class="weui-cell_bd">--%>
+                <%--<p>不办理</p>--%>
+            <%--</div>--%>
+            <%--<div class="weui-cell_ft">--%>
+                <%--<input type="radio" class="weui-check" name="loan" value="不办理" id="6"  <c:if test="${student.loan=='不办理'||student.loan==''}">checked</c:if>>--%>
+                <%--<span class="weui-icon-checked"></span>--%>
+            <%--</div>--%>
+        <%--</label>--%>
+    <%--</div>--%>
 
     <div class="weui-cells__title">是否迁移户口(点击选择)</div>
     <div class="weui-cells weui-cells_radio">
@@ -228,10 +244,10 @@
     </div>
     <div class="weui-cell">
         <div class="weui-cell__bd">
-            <label class="weui_label">预计报道时间：</label>
+            <label class="weui_label">预计报到时间：</label>
         </div>
         <div class="weui-cell__bd weui_cell_primary">
-            <input class="weui-input" type="text"  name="registerTime" value="${traffic.registerTime}" placeholder="在此填写报道时间" >
+            <input class="weui-input" type="text"  name="registerTime" value="${traffic.registerTime}" placeholder="在此填写报到时间" >
         </div>
     </div>
     <div class="weui-cells__tips">格式：YYYY-MM-DD</div>

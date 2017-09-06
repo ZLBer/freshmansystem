@@ -51,7 +51,7 @@
 
 <div class="weui-msg__opr-area">
     <p class="weui-btn-area">
-        <a href="http://pan.baidu.com/share/qrcode?w=350&h=350&url='${student.sno},${student.name},${student.college},${student.major},${student.brother},${student.brothertel},${student.helper},${student.helpertel},${student.dormNum},${student.class}'" class="weui-btn weui-btn_primary" >生成二维码</a>
+        <a href="http://pan.baidu.com/share/qrcode?w=350&h=350&url='${student.sno},${student.name},${student.college},${student.major},${student.brother},${student.brothertel},${student.helper},${student.helpertel},${student.dormNum},${student.classNum}'" class="weui-btn weui-btn_primary" >生成二维码</a>
     </p>
 </div>
 

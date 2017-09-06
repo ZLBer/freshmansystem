@@ -20,7 +20,7 @@
 </head>
 <body>
 <center>
-<div>学校整体报到率：${school}</div>
+<div>学校整体报到率：${school},报到总人数：${schoolYes}。</div>
 <table border="4" align="center" style= "backgound-repeat:none " frame="void"
 			class="easyui-datagrid" id="content" rownumbers="true"  width="100%">
 <thead>        
@@ -31,7 +31,7 @@
     <th data-options="field:'4'">未报到人数</th>
     <th data-options="field:'5'">学院新生总人数</th>
     <th data-options="field:'6'">学院报到率</th>
-    <th data-options="field:'7'">查看学院报道率</th>
+    <th data-options="field:'7'">查看学院报到率</th>
 </tr>
 </thead>
 <tbody>
